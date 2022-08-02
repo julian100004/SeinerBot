@@ -2,7 +2,7 @@
 if (process.version.slice(1).split(".")[0] < 16) throw new Error("Node 16.0.0 wird benötigt. Aktualisiere Node auf deinem System.");
 
 //lädt das Discord library
-const {Client: DiscordClient, GatewayIntentBits} = require("discord.js");
+const {Client: DiscordClient} = require("discord.js");
 let config;
 try {
     config = require("./config.json");
